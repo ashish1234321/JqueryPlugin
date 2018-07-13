@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://www.codexworld.com/wp-content/uploads/2014/09/favicon.ico" type="image/x-icon" />
+        <meta name="description" content="Live Demo at CodexWorld - Multi-select Dropdown List with Checkbox using jQuery">
+        <meta name="keywords" content="demo, codexworld demo, project demo, live demo, tutorials, programming, coding">
+        <meta name="author" content="CodexWorld">
+        <title>Live Demo - Multi-select Dropdown List with Checkbox using jQuery</title>
+        <!-- Bootstrap core CSS -->
+        <link href="http://demos.codexworld.com/includes/css/bootstrap.css" rel="stylesheet">
+        <!-- Add custom CSS here -->
+        <link href="http://demos.codexworld.com/includes/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="http://demos.codexworld.com/multi-select-dropdown-list-with-checkbox-jquery/jquery.multiselect.css"/>
+<style type="text/css">
+ul,li { margin:0; padding:0; list-style:none;}
+.label { color:#000; font-size:16px;}
+.ms-options-wrap{width: 30%;margin: 0px auto;}
+.ms-options-wrap > .ms-options, .ms-options-wrap > button:focus, .ms-options-wrap > button {padding: 12px;box-shadow: 0px 0px 0px 8px #90aeff;border: 1px dashed #fafafa;}
+.ms-options-wrap > .ms-options > .ms-selectall.global {margin: 4px 5px;text-transform: capitalize;margin: 19px 10px 10px 0px;text-decoration: none;}
+.ms-options-wrap > .ms-options {position: absolute;left: 0;width: 100%;margin-top: 9px;}
+.ms-options-wrap > .ms-options > ul label {position: relative;display: inline-block;width: 100%;padding: 12px 4px;padding-left: 4px;margin: 1px 0;font-weight: normal;font-size: 14px;line-height: 10px;}
+.ms-options-wrap > .ms-options > ul li.selected label, .ms-options-wrap > .ms-options > ul label:hover {background-color: #fbfbfb;border-left: 1px solid #ccc;border-left-width: 1px;border-width: 3px;box-shadow: 0px 10px 2px -10px;}
+.div-center > h2{font-size: 27px;text-transform: uppercase;margin-bottom: 6%;}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="div-center">
+                <h2>JQuery-MultiSelect(with select all option)</h2>
+                <select class="multiselect" multiple>
+                <option value="Ajmer">Ajmer</option>
+                <option value="Bhilwara">Bhilwara</option>
+                <option value="Chittorgarh">Chittorgarh</option>
+                <option value="Dausa">Dausa</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Jodhpur">Jodhpur</option>
+                </select>
+            </div>
+    	</div>
+  	</div>
+</div>
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://demos.codexworld.com/includes/js/bootstrap.js"></script>
+<script src="http://demos.codexworld.com/multi-select-dropdown-list-with-checkbox-jquery/jquery.multiselect.js"></script>
+<script>
+$('.multiselect').multiselect({
+    columns: 1,
+    placeholder: 'Select City',
+    search: true,
+    selectAll: true
+});
+</script>
+</body>
+</html>
